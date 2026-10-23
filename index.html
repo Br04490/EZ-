@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#061332"><meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <meta name="apple-mobile-web-app-title" content="Ezra Hooping">
+ <meta name="description" content="Ezra Be Hooping! Three courts, 30-second basketball shooting, and Lennox's live commentary.">
+ <link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml">
+ <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+ <link rel="stylesheet" href="./src/styles.css">
+ <title>EZRA BE HOOPING! 🏀</title>
+</head>
+<body>
+<div id="app" class="app backyard" aria-label="Ezra Be Hooping game">
+  <!-- HOME: All title and buttons are real HTML, never baked into background art. -->
+  <section id="home-screen" class="screen home-screen" aria-label="Main menu">
+    <div class="home-scene" aria-hidden="true"></div>
+    <div class="home-content">
+      <div class="brand" aria-label="Ezra Be Hooping"><span class="brand-crown">♛</span><span class="brand-ezra">EZRA<span class="brand-ball">🏀</span></span><span class="brand-bottom">BE HOOPING!</span></div>
+      <div class="home-spacer"></div>
+      <div class="home-actions">
+        <button type="button" class="arcade-btn gold primary-home" id="play-btn"><span aria-hidden="true">▶</span> PLAY</button>
+        <button type="button" class="arcade-btn blue" id="stages-btn"><span aria-hidden="true">▣</span> STAGES</button>
+        <button type="button" class="arcade-btn purple" id="music-btn"><span aria-hidden="true">♫</span> MUSIC</button>
+        <nav class="quick-nav" aria-label="More options">
+          <button type="button" id="settings-btn" class="round-btn" aria-label="Settings"><span>⚙</span><small>SETTINGS</small></button>
+          <button type="button" id="scores-btn" class="round-btn" aria-label="High scores"><span>🏆</span><small>HIGH SCORES</small></button>
+          <button type="button" id="help-btn" class="round-btn" aria-label="How to play"><span>?</span><small>HOW TO PLAY</small></button>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <!-- STAGES: background pictures in the buttons are separate assets, the cards are real clickable elements. -->
+  <section id="stages-screen" class="screen section-screen is-hidden" aria-label="Choose a stage" hidden>
+    <header class="section-head"><button class="back-btn" data-back="home" aria-label="Back to home">‹</button><h2>CHOOSE A STAGE</h2><span class="head-crown">♛</span></header>
+    <div id="stage-cards" class="stage-cards" aria-label="Basketball court selection"></div>
+    <div class="section-bottom"><span>EVERY STAGE HAS THE SAME EASY CONTROLS</span></div>
+  </section>
+  <!-- GAME: tap the big orange button, the meter, OR the unobstructed court to shoot. -->
+  <section id="game-screen" class="screen game-screen is-hidden" hidden aria-label="Basketball gameplay">
+    <div id="game-art" class="game-art" aria-hidden="true"></div>
+    <div class="game-vignette" aria-hidden="true"></div>
+    <div id="court-tap-zone" class="court-tap-zone" role="button" tabindex="0" aria-label="Tap the court to shoot a basketball"></div>
+    <header class="game-hud" aria-label="Scoreboard">
+      <button type="button" id="pause-btn" class="hud-pause" aria-label="Pause game">Ⅱ</button>
+      <div class="hud-pill time" id="time-container"><span class="hud-icon">⏱</span><strong id="time-value">0:30</strong></div>
+      <div class="hud-pill score"><span class="hud-icon">🏀</span><div class="score-value"><strong id="score-value">0</strong><small>BUCKETS</small></div></div>
+    </header>
+    <div class="stage-corner" id="game-stage-label" aria-hidden="true">BACKYARD BUCKETS</div>
+    <div class="basketball" id="flight-ball" aria-hidden="true">🏀</div>
+    <img id="net-effect" class="net-effect" src="./assets/game-art/backyard-net.png" alt="" aria-hidden="true">
+    <div id="swish-flash" class="swish-flash" aria-hidden="true">✦ ✨ ✦</div>
+    <div id="made-title" class="made-title" aria-live="polite">GREEN!</div>
+    <div id="sister-caption" class="sister-caption" aria-live="polite"></div>
+    <div id="countdown-call" class="countdown-call" aria-live="off"></div>
+    <div id="effect-particles" class="effect-particles" aria-hidden="true"></div>
+    <div class="shot-ui">
+      <div class="shot-meter" id="shot-meter" role="meter" aria-label="Shot timing meter, green is a make" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+        <div class="shot-green" id="green-zone"></div><div class="shot-pointer" id="shot-pointer"><span>🏀</span><b>▼</b></div>
+      </div>
+      <button type="button" id="shoot-btn" class="arcade-btn gold shoot-btn" disabled><span aria-hidden="true">🏀</span> TAP TO SHOOT</button>
+      <span class="tap-hint">TAP THE BUTTON OR ANYWHERE ON THE COURT</span>
+    </div>
+    <!-- The pause dialog stops the timer and prevents scoring while open. -->
+    <div id="pause-overlay" class="modal-shade is-hidden" hidden>
+      <div class="modal-card"><h2>PAUSED</h2><p>Ready for more buckets?</p>
+       <button id="resume-btn" class="arcade-btn gold">▶ RESUME</button>
+       <button id="quit-btn" class="arcade-btn blue">⌂ MAIN MENU</button></div>
+    </div>
+  </section>
+  <!-- RESULT: accessible text reflects actual live game state (never the score burned into artwork). -->
+  <section id="results-screen" class="screen results-screen is-hidden" hidden aria-label="Game results">
+    <div class="result-art" aria-hidden="true"></div><div class="results-gradient" aria-hidden="true"></div>
+    <div class="results-content"><div class="result-title">♛ TIME'S UP! ♛</div><p class="result-label">YOU MADE</p>
+    <div class="result-total" id="result-total">0</div><div class="result-buckets">BUCKETS!</div>
+    <p id="result-best" class="result-best">PERSONAL BEST: 0</p>
+    <p id="result-quip" class="result-quip">EZ MONEY!</p>
+    <div class="results-actions"><button type="button" id="again-btn" class="arcade-btn gold">↻ PLAY AGAIN</button><button type="button" id="change-btn" class="arcade-btn blue">CHANGE STAGE</button><button type="button" id="result-home-btn" class="arcade-btn purple">⌂ MAIN MENU</button></div></div>
+  </section>
+  <!-- MUSIC: 2 full licensed-by-user supplied MP3s. iOS audio only starts after touch. -->
+  <section id="music-screen" class="screen section-screen is-hidden" hidden aria-label="Music settings">
+    <header class="section-head"><button class="back-btn" data-back="home" aria-label="Back to main menu">‹</button><h2>♫ MUSIC</h2><span class="head-crown">♛</span></header>
+    <div class="panel-stack"><p class="section-copy">CHOOSE THE SONG FOR YOUR NEXT ROUND</p>
+      <button class="music-choice" type="button" data-track="auto"><span class="album-art">🏀</span><span class="track-info"><b>AUTO BY STAGE</b><small>Backyard: Got Game · Others: Be Hooping</small></span><span class="track-indicator">✓</span></button>
+      <button class="music-choice" type="button" data-track="ezra-be-hooping-2"><span class="album-art">🎤</span><span class="track-info"><b>Ezra Be Hooping 2</b><small>Original full song · Track 1</small></span><span class="track-indicator">▶</span></button>
+      <button class="music-choice" type="button" data-track="ezra-got-game"><span class="album-art">⭐</span><span class="track-info"><b>Ezra Got Game</b><small>Original full song · Track 2</small></span><span class="track-indicator">▶</span></button>
+      <label class="control-row"><span>♫ MUSIC ON</span><input id="music-enabled" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <label class="slider-row"><span>VOLUME</span><input id="volume-slider" type="range" min="0" max="100" value="42" aria-label="Music volume"></label>
+      <button class="arcade-btn blue bottom-home" data-back="home">⌂ MAIN MENU</button>
+    </div>
+  </section>
+  <!-- SETTINGS: persistent device-local preferences, no accounts required. -->
+  <section id="settings-screen" class="screen section-screen is-hidden" hidden aria-label="Game settings">
+    <header class="section-head"><button class="back-btn" data-back="home" aria-label="Back to main menu">‹</button><h2>⚙ SETTINGS</h2><span class="head-crown">♛</span></header>
+    <div class="panel-stack settings-stack">
+      <label class="control-row"><span>♫ MUSIC</span><input id="settings-music" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <label class="control-row"><span>◖)) SOUND EFFECTS</span><input id="settings-sfx" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <label class="control-row"><span>🎤 VOICES <small>Ezra & Lennox dialogue</small></span><input id="settings-voices" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <label class="control-row"><span>♛ LITTLE HOOPER MODE <small>Extra-wide green zone</small></span><input id="settings-easy" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <label class="control-row"><span>☝ COURT TAP SHOOTING <small>Tap the court as well as the button</small></span><input id="settings-court-tap" type="checkbox" checked><span class="toggle-indicator"></span></label>
+      <p class="settings-note">The orange TAP TO SHOOT button always works. No sign-in, data collection, or purchases.</p>
+      <button class="arcade-btn blue bottom-home" data-back="home">⌂ MAIN MENU</button>
+    </div>
+  </section>
+  <section id="scores-screen" class="screen section-screen is-hidden" hidden aria-label="High scores"><header class="section-head"><button class="back-btn" data-back="home" aria-label="Back to main menu">‹</button><h2>🏆 HIGH SCORES</h2><span class="head-crown">♛</span></header><div class="panel-stack" id="highscores-list"></div><button class="arcade-btn gold panel-bottom" data-back="home">⌂ HOME</button></section>
+  <section id="help-screen" class="screen section-screen is-hidden" hidden aria-label="How to play"><header class="section-head"><button class="back-btn" data-back="home" aria-label="Back to main menu">‹</button><h2>HOW TO PLAY</h2><span class="head-crown">♛</span></header><div class="panel-stack help-stack"><div class="how-step"><span>①</span><p>Choose one of the <b>3 basketball courts</b> and tap PLAY.</p></div><div class="how-step"><span>②</span><p>Watch the ball move across the colorful meter. <b>Green means BUCKET!</b></p></div><div class="how-step"><span>③</span><p>Tap the <b>BIG ORANGE SHOOT BUTTON</b> or anywhere on the open court.</p></div><div class="how-step"><span>④</span><p>Make as many buckets as you can in <b>30 seconds!</b> Lennox counts down the final five seconds.</p></div><div class="how-step"><span>⑤</span><p>Ezra celebrates every make and tells you how many buckets he made at the end.</p></div><button id="help-play-btn" class="arcade-btn gold">▶ PLAY NOW</button></div></section>
+  <div class="sr-only" aria-live="polite" id="announcer"></div>
+</div>
+<script type="module" src="./src/game.js"></script>
+</body></html>

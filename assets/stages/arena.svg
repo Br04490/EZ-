@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 680" preserveAspectRatio="none">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#070e37"/><stop offset=".48" stop-color="#20266e"/><stop offset="1" stop-color="#326fc9"/></linearGradient><linearGradient id="wood" x2="0" y2="1"><stop stop-color="#e9a76d"/><stop offset="1" stop-color="#a96a4e"/></linearGradient><pattern id="lights" width="25" height="34" patternUnits="userSpaceOnUse"><rect width="25" height="34" fill="#26316e"/><circle cx="8" cy="10" r="4" fill="#c1bbfa"/><circle cx="21" cy="24" r="3" fill="#7f95ed"/></pattern></defs>
+<rect width="390" height="680" fill="url(#sky)"/>
+<path d="M0 86Q196 -60 390 86" stroke="#5265b6" stroke-width="17" fill="none"/>
+<path d="M0 145Q196 15 390 145" stroke="#4559a4" stroke-width="12" fill="none"/>
+<g fill="#f5f8ff" opacity=".97"><circle cx="20" cy="74" r="8"/><circle cx="62" cy="48" r="8"/><circle cx="102" cy="33" r="8"/><circle cx="282" cy="38" r="8"/><circle cx="326" cy="57" r="8"/><circle cx="374" cy="88" r="8"/></g>
+<rect y="197" width="390" height="269" fill="url(#lights)"/>
+<path d="M0 239H390M0 300H390M0 366H390M0 428H390" stroke="#141c5e" stroke-width="13"/>
+<path d="M0 396H390" stroke="#01caff" stroke-width="13"/>
+<path d="M0 403H390" stroke="#c476ff" stroke-width="5"/>
+<rect x="282" y="150" width="91" height="55" fill="#041e53" stroke="#4aa3ff" stroke-width="6"/><text x="327" y="186" fill="#ffe44a" font-size="36" font-family="Arial" font-weight="900" text-anchor="middle">EZ</text>
+<rect y="462" width="390" height="218" fill="url(#wood)"/>
+<path d="M0 489H390M0 529H390M0 578H390M0 635H390" stroke="#c78359" stroke-width="5" opacity=".55"/>
+<path d="M0 469H390M-30 646Q194 419 420 646M195 466V680" fill="none" stroke="#faf9fc" stroke-width="6" opacity=".75"/>
+<circle cx="195" cy="615" r="73" fill="none" stroke="#3755ae" stroke-width="12"/><text x="195" y="633" font-size="64" font-weight="900" fill="#34559f" text-anchor="middle" font-family="Arial">EZ</text>
+<g fill="#fff6c4"><circle cx="18" cy="218" r="3"/><circle cx="76" cy="246" r="3"/><circle cx="257" cy="215" r="4"/><circle cx="322" cy="278" r="3"/></g>
+</svg>

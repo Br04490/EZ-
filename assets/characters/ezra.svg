@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 430" role="img" aria-label="Ezra number four">
+ <defs><linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#bb7448"/><stop offset="1" stop-color="#8a462e"/></linearGradient><linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#b9dafa"/></linearGradient><radialGradient id="ball" cx=".25" cy=".2"><stop stop-color="#ffc66a"/><stop offset=".6" stop-color="#f88d28"/><stop offset="1" stop-color="#bd421a"/></radialGradient></defs>
+ <!-- sneakers and legs -->
+ <path d="M137 314 L134 382 100 391 94 365 101 312Z" fill="url(#skin)" stroke="#673927" stroke-width="4"/>
+ <path d="M201 307 219 379 183 390 167 323Z" fill="url(#skin)" stroke="#673927" stroke-width="4"/>
+ <path d="M97 371 132 372 143 400 132 411 55 411 Q43 395 67 380Z" fill="#e7f5ff" stroke="#1767b6" stroke-width="6"/>
+ <path d="M180 373 220 372 243 397 Q245 411 224 412 L166 412 159 398Z" fill="#e7f5ff" stroke="#1767b6" stroke-width="6"/>
+ <path d="M64 404 130 404M170 405 233 405" stroke="#118df1" stroke-width="6"/>
+ <path d="M113 372 93 388M121 379 101 397M195 379 214 397M182 390 206 403" stroke="#72bfff" stroke-width="3"/>
+ <!-- shorts -->
+ <path d="M101 258 Q144 252 201 259 L215 329 158 336 149 309 143 335 84 327Z" fill="#2e8bed" stroke="#0a5caa" stroke-width="5"/>
+ <path d="M146 282 144 326" stroke="#096db6" stroke-width="4"/>
+ <!-- arms behind ball -->
+ <path d="M96 173 Q71 186 65 218 Q62 246 82 257 L114 254 118 234 96 225 112 203Z" fill="url(#skin)" stroke="#703b2a" stroke-width="5"/>
+ <path d="M196 174 Q227 190 234 225 L220 244 200 214 183 199Z" fill="url(#skin)" stroke="#703b2a" stroke-width="5"/>
+ <!-- torso jersey from behind -->
+ <path d="M106 166 Q143 155 188 166 L206 266 Q155 281 93 266Z" fill="url(#shirt)" stroke="#117dc4" stroke-width="5"/>
+ <path d="M104 173 93 212M192 176 203 215" stroke="#e5b642" stroke-width="6"/>
+ <path d="M122 161 Q151 184 174 162" fill="none" stroke="#0e6fb6" stroke-width="5"/>
+ <text x="150" y="209" font-size="22" text-anchor="middle" fill="#156bb4" font-family="Arial, sans-serif" font-weight="900">ROLLINS</text>
+ <text x="150" y="263" font-size="74" text-anchor="middle" fill="#1978bc" stroke="#fbc548" stroke-width="2" paint-order="stroke" font-family="Arial" font-weight="900">4</text>
+ <!-- head, side-looking -->
+ <path d="M98 53 Q130 22 175 42 Q216 64 208 111 Q205 150 174 173 Q132 187 102 155 Q76 136 78 97Z" fill="url(#skin)" stroke="#7c402d" stroke-width="5"/>
+ <ellipse cx="198" cy="118" rx="16" ry="22" fill="#b36e43" stroke="#703d2b" stroke-width="4"/>
+ <path d="M76 105 Q66 119 74 131 L97 135 100 109Z" fill="#a65d39" stroke="#713c2a" stroke-width="3"/>
+ <path d="M80 90 Q80 37 125 29 Q190 8 209 70 L204 98 Q180 82 161 69 Q124 66 103 91Z" fill="#28201b" stroke="#201711" stroke-width="5"/>
+ <path d="M84 80 Q122 50 182 62 M91 57 Q134 33 187 54 M121 36 Q156 29 188 42" fill="none" stroke="#4c392c" stroke-width="7" stroke-linecap="round"/>
+ <ellipse cx="96" cy="104" rx="7" ry="11" fill="white"/><circle cx="93" cy="106" r="4" fill="#1f1615"/>
+ <path d="M79 145 Q89 154 103 144" fill="none" stroke="#612d27" stroke-width="4" stroke-linecap="round"/>
+ <!-- basketball -->
+ <circle cx="73" cy="245" r="52" fill="url(#ball)" stroke="#703f19" stroke-width="5"/>
+ <path d="M22 245H125M73 193Q38 245 73 297M73 193Q113 246 73 297M31 218Q73 234 112 210" fill="none" stroke="#61351e" stroke-width="3"/>
+ <path d="M100 222 86 239 88 259" fill="none" stroke="#8e4d2f" stroke-width="8" stroke-linecap="round"/>
+</svg>

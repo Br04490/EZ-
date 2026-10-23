@@ -1,0 +1,16 @@
+{
+  "name": "Ezra Be Hooping!",
+  "short_name": "Ezra Hooping",
+  "description": "A one-tap, 30-second basketball game for kids.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#061b40",
+  "theme_color": "#061b40",
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

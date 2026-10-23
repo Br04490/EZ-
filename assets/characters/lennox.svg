@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290 465" role="img" aria-label="Lennox courtside commentator">
+ <defs><linearGradient id="skin" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#be764f"/><stop offset="1" stop-color="#924b34"/></linearGradient><linearGradient id="mic" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#ffe76e"/><stop offset="1" stop-color="#ff9c12"/></linearGradient></defs>
+ <!-- bicycle behind commentator -->
+ <circle cx="80" cy="375" r="63" fill="none" stroke="#132e6a" stroke-width="13"/><circle cx="80" cy="375" r="51" fill="none" stroke="#c0e3f3" stroke-width="5"/>
+ <circle cx="224" cy="375" r="51" fill="none" stroke="#14356f" stroke-width="11"/><circle cx="224" cy="375" r="42" fill="none" stroke="#acd5f3" stroke-width="4"/>
+ <path d="M81 376 122 283 175 376 81 376 143 326 222 376 188 280" fill="none" stroke="#f04b39" stroke-width="10" stroke-linejoin="round"/>
+ <path d="M166 272 205 271 223 292" fill="none" stroke="#4ca3fd" stroke-width="11" stroke-linecap="round"/>
+ <path d="M108 280 152 280" stroke="#102349" stroke-width="9" stroke-linecap="round"/>
+ <!-- legs in bike seat -->
+ <path d="M108 316 93 379 69 380 65 357 67 323Z" fill="#2c333a" stroke="#131f2a" stroke-width="5"/>
+ <path d="M171 319 178 372 198 384 220 366 208 311Z" fill="#2c333a" stroke="#131f2a" stroke-width="5"/>
+ <path d="M62 369 90 366 Q112 394 103 401 L42 401 Q28 393 43 378Z" fill="#ef7b52" stroke="white" stroke-width="5"/>
+ <path d="M173 375 204 364 239 393 Q242 404 227 406 L179 405Z" fill="#ef7b52" stroke="white" stroke-width="5"/>
+ <!-- shoulders body -->
+ <path d="M92 198 Q130 177 178 193 L209 324 Q139 347 75 319Z" fill="#383838" stroke="#1c1c1c" stroke-width="5"/>
+ <text x="144" y="249" font-size="15" text-anchor="middle" font-family="Arial" font-weight="900" fill="#ffd570">LENNOX DIANN</text>
+ <text x="144" y="284" font-size="17" text-anchor="middle" font-family="Arial" font-weight="900" fill="#ffd570">ROLLINS</text>
+ <circle cx="144" cy="265" r="12" fill="#9cd4ff"/><circle cx="127" cy="266" r="6" fill="#fa9956"/><circle cx="162" cy="266" r="6" fill="#ffcf56"/>
+ <!-- braids -->
+ <path d="M85 98 Q48 133 49 256M99 104 Q73 143 74 258 M194 97 Q229 142 234 259 M184 108 Q208 166 210 250" stroke="#29201a" stroke-width="15" fill="none" stroke-linecap="round"/>
+ <path d="M49 158 57 169 M70 182 78 192 M215 180 228 190 M52 220 62 229" stroke="#6a4735" stroke-width="4"/>
+ <!-- head -->
+ <path d="M78 87 Q88 28 142 24 Q200 29 212 84 L210 149 Q195 195 146 204 Q91 199 75 157Z" fill="url(#skin)" stroke="#7a442f" stroke-width="5"/>
+ <path d="M77 112 Q51 69 87 38 Q131 -3 179 27 Q214 37 211 112 Q185 97 166 74 Q128 60 86 91Z" fill="#282019" stroke="#211811" stroke-width="5"/>
+ <path d="M83 74Q122 48 191 78 M94 52Q141 33 194 62 M105 34Q141 22 180 46" stroke="#553b2e" stroke-width="6" fill="none" stroke-linecap="round"/>
+ <ellipse cx="75" cy="136" rx="13" ry="22" fill="#a85e40"/><ellipse cx="211" cy="134" rx="11" ry="21" fill="#a85e40"/>
+ <ellipse cx="111" cy="127" rx="18" ry="21" fill="#fff"/><ellipse cx="171" cy="127" rx="18" ry="21" fill="#fff"/>
+ <circle cx="117" cy="130" r="10" fill="#37241f"/><circle cx="176" cy="130" r="10" fill="#37241f"/>
+ <circle cx="120" cy="125" r="4" fill="#fff"/><circle cx="178" cy="125" r="4" fill="#fff"/>
+ <path d="M107 165 Q145 198 182 161 Q166 191 140 188 Q116 184 107 165Z" fill="#fff" stroke="#8f4835" stroke-width="5" stroke-linejoin="round"/>
+ <path d="M145 142 151 152 140 151" fill="none" stroke="#934d38" stroke-width="3"/>
+ <!-- arms + mic -->
+ <path d="M87 216Q61 239 54 276 L70 290 Q98 257 108 234Z" fill="url(#skin)" stroke="#763a28" stroke-width="5"/>
+ <path d="M182 219 Q225 243 223 291 L204 297 182 255Z" fill="url(#skin)" stroke="#763a28" stroke-width="5"/>
+ <path d="M56 280 82 226" stroke="#1078ee" stroke-width="17" stroke-linecap="round"/>
+ <path d="M58 278 83 228" stroke="#49b7fc" stroke-width="6" stroke-linecap="round"/>
+ <ellipse cx="87" cy="215" rx="19" ry="25" transform="rotate(28 87 215)" fill="url(#mic)" stroke="#c57d18" stroke-width="4"/>
+ <ellipse cx="89" cy="209" rx="17" ry="13" transform="rotate(28 89 209)" fill="#d9e9ec" stroke="#9cadbf" stroke-width="3"/>
+</svg>

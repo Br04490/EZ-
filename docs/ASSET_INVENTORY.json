@@ -1,0 +1,372 @@
+{
+  "project": "Ezra Be Hooping V3",
+  "source_files": 73,
+  "total_bytes": 24578180,
+  "files": [
+    {
+      "path": "AI_STUDIO_PROMPT.md",
+      "bytes": 4672,
+      "sha256": "ee97368103ea21a6b2c4447bdae55ef2b3d279b871821a1e50592b5a2b3a799f"
+    },
+    {
+      "path": "AUDIO_VOICE_BIBLE.md",
+      "bytes": 2678,
+      "sha256": "a97f91cea5829d7760f98238b0cac982475cd74190b5f8e8472e2244f83548ef"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 984,
+      "sha256": "52ccc2a931f72440a6ddf5fdcb534d545af9180027529b31324863a95e40a344"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7601,
+      "sha256": "1eefa972d9d32438649a0e503ee82193303d9a7cdb0a40e58323e74e11099a59"
+    },
+    {
+      "path": "assets/approved-art/FINAL-APPROVED-UI.png",
+      "bytes": 2548102,
+      "sha256": "18347af27dd8150a33a9a0d2dc681ea1b2adf0474024d2014b180e5671fbe7b9"
+    },
+    {
+      "path": "assets/approved-art/backyard-original.png",
+      "bytes": 2439083,
+      "sha256": "327d73c702beb18850f64606654f1eb80a26619771c98c2a624d66e54a0e3fae"
+    },
+    {
+      "path": "assets/approved-art/user-confirmed-reference.jpeg",
+      "bytes": 283833,
+      "sha256": "266ed950fa96bfe8897bdeaf5f22e395f32effea0140d6708b1740da7a2a9573"
+    },
+    {
+      "path": "assets/audio-setup.md",
+      "bytes": 3010,
+      "sha256": "2c770f51c311da67221691a0fdf4d918cd871836e15cb8f6fdc349a148ae1b86"
+    },
+    {
+      "path": "assets/characters/ezra.svg",
+      "bytes": 3547,
+      "sha256": "57bc3fb2664778d2cab166748f4c9163bceb2fe34026758dff38d2a7c899d893"
+    },
+    {
+      "path": "assets/characters/lennox.svg",
+      "bytes": 4182,
+      "sha256": "185ad5ae2b3931189f01095970f4451bbb6a557c535619f79d8c53031ff7a1e5"
+    },
+    {
+      "path": "assets/game-art/arena-card.webp",
+      "bytes": 22284,
+      "sha256": "9bc9955de12f7eb8b26f3547769a9ba0e0a04f23c28095a9cb79aac7f8afdb41"
+    },
+    {
+      "path": "assets/game-art/arena-net.png",
+      "bytes": 14277,
+      "sha256": "e9accef354eaa0dbf4295a22b19b3e7093060392d5f956c7cb8554c28c39b483"
+    },
+    {
+      "path": "assets/game-art/arena-scene.webp",
+      "bytes": 85442,
+      "sha256": "8608c4f06fd9b1af57157f96268ee1568d5adfff09e88bb6e6b2265a75c66b87"
+    },
+    {
+      "path": "assets/game-art/backyard-card.webp",
+      "bytes": 21056,
+      "sha256": "0a2ce7b7a544fa5ac46fed8d5cbddf7d5a95f84930db502224244408fafaf5f0"
+    },
+    {
+      "path": "assets/game-art/backyard-net.png",
+      "bytes": 62106,
+      "sha256": "df1ff99d298164dcb358236175b7fca5f52dbd574649d18bb8acee3011f6ff25"
+    },
+    {
+      "path": "assets/game-art/backyard-scene.webp",
+      "bytes": 277352,
+      "sha256": "2bacadefd206bc8c256f6adf443e449c17318727589ee34c362d936db9c5a8e4"
+    },
+    {
+      "path": "assets/game-art/menu-illustration.webp",
+      "bytes": 227732,
+      "sha256": "9e067d41a5375fedc3293860c923f7c05216576f09f6c37d6fa603e7b40f77f2"
+    },
+    {
+      "path": "assets/game-art/playground-card.webp",
+      "bytes": 19324,
+      "sha256": "aaf102d66608e0768033df7881c6e3a6daec4996a8815b9a3808dd448c15c469"
+    },
+    {
+      "path": "assets/game-art/playground-net.png",
+      "bytes": 22999,
+      "sha256": "027da2b4c341c601f824d92dfa0b9a3c4e60ab8379f62e5a1e3bc3afc9d19380"
+    },
+    {
+      "path": "assets/game-art/playground-scene.webp",
+      "bytes": 94762,
+      "sha256": "86f8b6db5e4ed01752bdec557d2e5526ea43cd298e0dff80005c8cf850f0bb2a"
+    },
+    {
+      "path": "assets/icons/favicon.svg",
+      "bytes": 478,
+      "sha256": "7e3ec08105ba3a1a5a6effcd21f6618c01c9fd3999446b43cefd41ba543fa635"
+    },
+    {
+      "path": "assets/icons/icon-192.png",
+      "bytes": 12949,
+      "sha256": "8b083613aa426a8574370f6964e9b06b372b70f6eff3027ababcc8f6ed7ce445"
+    },
+    {
+      "path": "assets/icons/icon-512.png",
+      "bytes": 34872,
+      "sha256": "5755b2339182a92a27329e6703f1c664fd8d22433fd4e25af18acd5ba83d0a5e"
+    },
+    {
+      "path": "assets/music/ezra-be-hooping-2.mp3",
+      "bytes": 1758800,
+      "sha256": "be3aea7b0b44a4bda363ddaff51702e7a8b543eeae309901c55b0a7575f1be83"
+    },
+    {
+      "path": "assets/music/ezra-got-game.mp3",
+      "bytes": 2980456,
+      "sha256": "8564710fe96e76106c2a0a10b31f801b06bfe4f1df261436b58b3781bd9c17a1"
+    },
+    {
+      "path": "assets/previews/actual-gameplay-v1.1.png",
+      "bytes": 177194,
+      "sha256": "5936fea32133133eaeebc193ba9269a5a927cbbbf821f496e847aacc5cc75c21"
+    },
+    {
+      "path": "assets/previews/actual-menu-v1.1.png",
+      "bytes": 192230,
+      "sha256": "9ac5845eadfabe637bfb51d119856b41676aee6ab755d7efb9395e051e51f177"
+    },
+    {
+      "path": "assets/previews/actual-menu-v2.png",
+      "bytes": 304570,
+      "sha256": "52cea870481480d25d2c7c95b69c1c96cacacd836eaf836e70597316fd3c24ef"
+    },
+    {
+      "path": "assets/previews/actual-stage1-v2.png",
+      "bytes": 438034,
+      "sha256": "060ba522c74353c2265d472a4a1e42d23e37edace1cd7f6e0958ac6ef850cc64"
+    },
+    {
+      "path": "assets/previews/actual-stage2-v2.png",
+      "bytes": 428272,
+      "sha256": "5fdca7bb6fbc93472c2db543ef12a3e8000a230172764c4bb801ae2d6d4fed45"
+    },
+    {
+      "path": "assets/previews/actual-stage3-v2.png",
+      "bytes": 423218,
+      "sha256": "9fae63d5f76785246cb7c6a846936151c85effee854070951667ca6ab124709f"
+    },
+    {
+      "path": "assets/previews/actual-v3-arena.png",
+      "bytes": 458834,
+      "sha256": "a7ad6d4d29c675fe5404962d707d0ee7565cef84822590588714e201f4bf6f41"
+    },
+    {
+      "path": "assets/previews/actual-v3-backyard.png",
+      "bytes": 514979,
+      "sha256": "1c0c01bfaaff68ec58e65037b1ee67e347bbc078e3e780c43220532f142a3df1"
+    },
+    {
+      "path": "assets/previews/actual-v3-green-shot.png",
+      "bytes": 520672,
+      "sha256": "afbb4876fabc785561678f4318bdd074787c5ac6169c59658b768025d0cd58af"
+    },
+    {
+      "path": "assets/previews/actual-v3-menu.png",
+      "bytes": 465507,
+      "sha256": "d469475bc12139bab31e3dbb6fa36cec629834dcf1ffd5b8219e57afe5c5d6eb"
+    },
+    {
+      "path": "assets/previews/actual-v3-music.png",
+      "bytes": 152614,
+      "sha256": "39c9ae1525d778a973fd97862b0313f1193e13c8c5cf74e47eebd7602c6cdb6b"
+    },
+    {
+      "path": "assets/previews/actual-v3-playground.png",
+      "bytes": 481992,
+      "sha256": "ee43717674630f969ab7ef949533cb22365ce0f0a132909f4aaafba5cdcaf4c2"
+    },
+    {
+      "path": "assets/previews/actual-v3-results.png",
+      "bytes": 307950,
+      "sha256": "be926e589bd36f5127219b04acb12d40064e3efc96927da970c853bc825d7ad5"
+    },
+    {
+      "path": "assets/previews/actual-v3-settings.png",
+      "bytes": 159783,
+      "sha256": "a8e61562dcc42baf14990935c8667485c54e0d2b3baf4dc1b864c802a51fd27f"
+    },
+    {
+      "path": "assets/previews/actual-v3-stage-select.png",
+      "bytes": 334666,
+      "sha256": "d4ba5eabb5a53c67a82d6fc580f5728d7d85ab51245d6cd299c8441a758de86a"
+    },
+    {
+      "path": "assets/previews/reference-backyard.png",
+      "bytes": 2439083,
+      "sha256": "327d73c702beb18850f64606654f1eb80a26619771c98c2a624d66e54a0e3fae"
+    },
+    {
+      "path": "assets/previews/style-board.png",
+      "bytes": 3040382,
+      "sha256": "1a140897a0d7ebcb97228e857da3abfdaca6573228190c8d076ab6203d096832"
+    },
+    {
+      "path": "assets/previews/three-stage-ui.png",
+      "bytes": 2506190,
+      "sha256": "3768d41ee3e9f685e7be25a6dabf9e6cf8005e48b1ea1adbbb8d6976448296dd"
+    },
+    {
+      "path": "assets/sounds/ball-bounce.wav",
+      "bytes": 24298,
+      "sha256": "aecd192909b165483f469918202a0f11ad6a722c70c8d3e109469bf23b526bdf"
+    },
+    {
+      "path": "assets/sounds/crowd-cheer.wav",
+      "bytes": 50758,
+      "sha256": "0681a0b2ca95358616528dc50f46954dc243e0e39b1a373b13694da9ece4c549"
+    },
+    {
+      "path": "assets/sounds/final-buzzer.wav",
+      "bytes": 39734,
+      "sha256": "3e5c190108039755e0e99a8ca07c065cbd07c92efaf849c1530aaa84789c59fa"
+    },
+    {
+      "path": "assets/sounds/green-sparkle.wav",
+      "bytes": 24298,
+      "sha256": "9848151ca449e349a8503c09ccb5da555d4c41a6ed8969e331e58e7e1cd09a26"
+    },
+    {
+      "path": "assets/sounds/net-swish.wav",
+      "bytes": 27386,
+      "sha256": "45ffadbae43549ece7406ab45ab6a3193cf4d1a9623d0f9d201b8c50c3b2c8cf"
+    },
+    {
+      "path": "assets/sounds/rim-clang.wav",
+      "bytes": 25622,
+      "sha256": "82e51f396672a1ad17fac3052c3249bf4cee9987e5606a47f487d9fdd486fc7e"
+    },
+    {
+      "path": "assets/sounds/shot-whoosh.wav",
+      "bytes": 19888,
+      "sha256": "30c6941a81276f1b936f5d3ca30b97c9ac75b95559b68f3fb3d0d3cb1b81d65d"
+    },
+    {
+      "path": "assets/stages/arena.svg",
+      "bytes": 2171,
+      "sha256": "3e5deb9d6fc4ea877f5a9367a8a7ae5366e7e8e75cc9d79be1fa221b5a54625c"
+    },
+    {
+      "path": "assets/stages/backyard.svg",
+      "bytes": 2357,
+      "sha256": "e88b5677e155127766a348cd04a022024975b6ed6c8081f3a4223a665faca495"
+    },
+    {
+      "path": "assets/stages/playground.svg",
+      "bytes": 1904,
+      "sha256": "06384ea67c1af550dd4624421ba08f6c70f0b44810ffa183d6f76a82b2945609"
+    },
+    {
+      "path": "assets/voices/README.md",
+      "bytes": 520,
+      "sha256": "d2859342bf26020aae19eb8ea67df8f194e5b01a90698b91ad59c5f442d72feb"
+    },
+    {
+      "path": "docs/BUILD_TEST_REPORT.md",
+      "bytes": 1282,
+      "sha256": "643e0248b9a4d616853d5a1812f66a304faa4a9828fa83960de1a7ee794bb206"
+    },
+    {
+      "path": "docs/GITHUB_AND_GOOGLE_AI_STUDIO.md",
+      "bytes": 2175,
+      "sha256": "7ebeeaee585d100c83b9793bddfe53bbc6fcf863b2a1a6abeccdad22dbb061e0"
+    },
+    {
+      "path": "docs/RECORDING_AND_ART_GAPS.md",
+      "bytes": 3198,
+      "sha256": "898e9e7a0bea6d2f30b49fda7203a0fa909c276c3d4b4c42ed0df40fa460ebca"
+    },
+    {
+      "path": "docs/TOUCH_CONTROL_SPEC.md",
+      "bytes": 4822,
+      "sha256": "bed835c8da1923461288c0854adeb81d3cb1f7b89226de0301052142138f0240"
+    },
+    {
+      "path": "docs/legacy/V2_ARTWORK_LIMITATIONS.md",
+      "bytes": 2144,
+      "sha256": "6aa6b0eb77764c377d741d2aa64b879c9465eff4f2ef3d21b59170cb9d075dfe"
+    },
+    {
+      "path": "docs/legacy/V2_UPLOAD_INSTRUCTIONS.md",
+      "bytes": 1980,
+      "sha256": "74de01e453db92790b67126f0fc4afdf5750bd9bebf79cfdc1acfcb1e57a64e5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11338,
+      "sha256": "39d7c662a9e3c27c15f3255dae99b6bbb1726f1d8ada9798c8f8531a66c3c9ce"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 546,
+      "sha256": "ca7a6c83a98d56a5b48582241f46d28a5bddf66c057f480c79bfed04b6e5854a"
+    },
+    {
+      "path": "package.json",
+      "bytes": 381,
+      "sha256": "914fd1a279fcfd2ca9734ad6b06d52df96b36125b585167fbac63894a8de43cc"
+    },
+    {
+      "path": "src/audio.mjs",
+      "bytes": 2558,
+      "sha256": "2ac9c59e57e2f7c7dbe9b94afadba2b657dd46b8c88376c8c651545f3b0c7e56"
+    },
+    {
+      "path": "src/engine.mjs",
+      "bytes": 1963,
+      "sha256": "f55cce6786e0cc10c1bd2cf3257ee446ee248835238154cc2233656e0adac566"
+    },
+    {
+      "path": "src/game.js",
+      "bytes": 18977,
+      "sha256": "8457f50f820632719aeaa302e68a0d45d503c11eca5871eaacb9a5712b7d1cfb"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 19193,
+      "sha256": "3efb7587e51975c6552c8b9e1bc82ae79e58eecd4e8f7c33cd15c61a542a6a48"
+    },
+    {
+      "path": "src/voice-clips.mjs",
+      "bytes": 364,
+      "sha256": "e4bd1598673448ef30f2af226bc10e068a0d098d4bafa12e5f6a5683b314f4b7"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 2840,
+      "sha256": "e2ebb2cbcd07407a88afee2fa54871a613acb1e2c24a11d3a9038d54192f71cb"
+    },
+    {
+      "path": "tests/audio.test.mjs",
+      "bytes": 1336,
+      "sha256": "35c77f02920513b3390d8019b43a9a1bef18677eec240d80e7a3bc7ace001a63"
+    },
+    {
+      "path": "tests/engine.test.mjs",
+      "bytes": 1156,
+      "sha256": "541a41d50f2e78c98eb3f085760f478ff11e9379e1f224821110dfb0678a587a"
+    },
+    {
+      "path": "tests/project.test.mjs",
+      "bytes": 2888,
+      "sha256": "2ad14edbf29fc17e3a6b16797e22ffbe4a120b87a90e1da9a05fdf59242b70c5"
+    },
+    {
+      "path": "tools/dev-server.mjs",
+      "bytes": 1352,
+      "sha256": "912cd77768e8405fe40e019f5f492e6c9592cfae4f07f49265748d57eab2a6bf"
+    }
+  ]
+}
