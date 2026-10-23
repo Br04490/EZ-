@@ -19,3 +19,143 @@
    alone yielded a dark outline-only brand in some mobile renderers. */
 .brand-ezra { background:none; color:#ffb51f; -webkit-text-fill-color:#ffb51f; -webkit-text-stroke:3px #071843;
  text-shadow:0 -3px #fff060,4px 7px #052e79,0 0 10px #fff43e66; }
+
+/* ==============================================================
+   PREMIUM MENU ENTRANCE ANIMATIONS (Staggered spring 1.2-1.8s)
+   Preserves final approved layout and button positions.
+   ============================================================== */
+@keyframes brandEntrance {
+  0% { opacity: 0; transform: rotate(-4deg) scale(0.65) translateY(-25px); }
+  68% { opacity: 1; transform: rotate(-4deg) scale(1.05) translateY(2px); }
+  85% { transform: rotate(-4deg) scale(0.98) translateY(-1px); }
+  100% { opacity: 1; transform: rotate(-4deg) scale(1) translateY(0); }
+}
+
+@keyframes playButtonEntrance {
+  0% { opacity: 0; transform: translateY(50px) scale(0.88); }
+  72% { opacity: 1; transform: translateY(-5px) scale(1.03); }
+  88% { transform: translateY(2px) scale(0.99); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes stagesButtonEntrance {
+  0% { opacity: 0; transform: translateY(42px) scale(0.90); }
+  75% { opacity: 1; transform: translateY(-4px) scale(1.02); }
+  90% { transform: translateY(1px) scale(0.995); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes musicButtonEntrance {
+  0% { opacity: 0; transform: translateY(35px) scale(0.92); }
+  78% { opacity: 1; transform: translateY(-3px) scale(1.015); }
+  92% { transform: translateY(1px) scale(0.998); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes quickNavPop {
+  0% { opacity: 0; transform: scale(0.35) translateY(20px); }
+  75% { opacity: 1; transform: scale(1.12) translateY(-3px); }
+  90% { transform: scale(0.96) translateY(1px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes subtlePlayGlow {
+  0%, 100% { box-shadow: inset 0 4px #fff9ad, 0 5px #000a, 0 0 0 3px #1d9dff, 0 0 8px rgba(255, 187, 40, 0.25); }
+  50% { box-shadow: inset 0 4px #fff9ad, 0 5px #000a, 0 0 0 3px #1d9dff, 0 0 22px rgba(255, 200, 59, 0.7); }
+}
+
+/* Entrance classes applied on menu load */
+.brand.anim-enter {
+  animation: brandEntrance 0.75s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.primary-home.anim-enter {
+  animation: playButtonEntrance 0.68s cubic-bezier(0.34, 1.45, 0.64, 1) 0.22s both, subtlePlayGlow 2.5s ease-in-out 1.2s infinite;
+}
+
+#stages-btn.anim-enter {
+  animation: stagesButtonEntrance 0.62s cubic-bezier(0.34, 1.4, 0.64, 1) 0.38s both;
+}
+
+#music-btn.anim-enter {
+  animation: musicButtonEntrance 0.58s cubic-bezier(0.34, 1.35, 0.64, 1) 0.52s both;
+}
+
+.quick-nav.anim-enter .round-btn:nth-child(1) {
+  animation: quickNavPop 0.52s cubic-bezier(0.34, 1.5, 0.64, 1) 0.66s both;
+}
+
+.quick-nav.anim-enter .round-btn:nth-child(2) {
+  animation: quickNavPop 0.52s cubic-bezier(0.34, 1.5, 0.64, 1) 0.78s both;
+}
+
+.quick-nav.anim-enter .round-btn:nth-child(3) {
+  animation: quickNavPop 0.52s cubic-bezier(0.34, 1.5, 0.64, 1) 0.90s both;
+}
+
+/* Enhanced tactile button response */
+.arcade-btn {
+  will-change: transform, box-shadow;
+  transition: transform 0.12s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.12s ease;
+}
+.arcade-btn:active:not(:disabled) {
+  transform: translateY(4px) scale(0.965) !important;
+  box-shadow: inset 0 2px #ffffff55, 0 1px #0009 !important;
+}
+
+.round-btn span {
+  transition: transform 0.12s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.12s ease;
+}
+.round-btn:active span {
+  transform: scale(0.88) translateY(2px) !important;
+  box-shadow: 0 1px #0006 !important;
+}
+
+/* Sound Unlock Banner for Mobile Browsers */
+.sound-unlock-pill {
+  position: absolute;
+  z-index: 30;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  right: 14px;
+  background: linear-gradient(135deg, rgba(10, 42, 90, 0.94), rgba(4, 20, 48, 0.96));
+  border: 2px solid #57c0ff;
+  border-radius: 999px;
+  padding: 6px 14px;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6), 0 0 10px rgba(87, 192, 255, 0.4);
+  animation: soundPillFade 0.35s ease-out both;
+  backdrop-filter: none;
+}
+.sound-unlock-pill span:first-child {
+  font-size: 15px;
+  animation: noteWiggle 1s ease-in-out infinite alternate;
+}
+@keyframes noteWiggle {
+  from { transform: rotate(-8deg) scale(0.95); }
+  to { transform: rotate(12deg) scale(1.1); }
+}
+@keyframes soundPillFade {
+  from { opacity: 0; transform: translateY(-10px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .brand.anim-enter,
+  .primary-home.anim-enter,
+  #stages-btn.anim-enter,
+  #music-btn.anim-enter,
+  .quick-nav.anim-enter .round-btn {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+

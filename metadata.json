@@ -1,0 +1,8 @@
+{
+  "name": "Ezra Be Hooping",
+  "description": "Family-friendly arcade basketball game with 3 courts, 30-second shooting challenges, music, sound effects, and voice commentary.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
